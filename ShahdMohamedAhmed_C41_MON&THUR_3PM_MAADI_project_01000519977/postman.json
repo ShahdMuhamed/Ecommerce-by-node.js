@@ -1,0 +1,2447 @@
+{
+	"info": {
+		"_postman_id": "c48cbc3b-4743-4b6d-97b5-ae4dab445df4",
+		"name": "project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31189375"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"mohamed\",\n    \"lastName\" : \"ahmed\",\n    \"email\":\"mohamed8@gmail.com\",\n    \"password\":\"Hello@123\",\n    \"rePassword\":\"Hello@123\",\n    \"roleEmail\":\"hello@gmail.com\",\n    \"dateOfBirth\":\"2003/3/13\",\n    \"mobileNumber\":\"01000519977\"\n    // \"role\":\"user\",\n    // \"status\":\"online\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"shahd\",\n    \"lastName\" : \"mohamed\",\n    \"email\":\"shahd2@gmail.com\",\n    \"password\":\"Hello@123\",\n    \"rePassword\":\"Hello@123\",\n    \"roleEmail\":\"hello@gmail.com\",\n    \"dateOfBirth\":\"2003/3/13\",\n    \"mobileNumber\":\"01000519977\",\n    \"role\":\"user\",\n    \"status\":\"online\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "420"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a4-qhYeRDb1pFRMbIioej9iWBilyOI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 08:57:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"user\": {\n        \"firstName\": \"shahd\",\n        \"lastName\": \"mohamed\",\n        \"email\": \"shahd2@gmail.com\",\n        \"password\": \"$2b$08$/HhhAucFOaHxKn5WcXNZZOpK.dUHLrHuLh5Y/9I8QONbcD4rL8wBO\",\n        \"roleEmail\": \"hello@gmail.com\",\n        \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n        \"mobileNumber\": 1000519977,\n        \"role\": \"user\",\n        \"status\": \"online\",\n        \"_id\": \"65c73a85bd1e5a9edfc91061\",\n        \"createdAt\": \"2024-02-10T08:57:41.755Z\",\n        \"updatedAt\": \"2024-02-10T08:57:41.755Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mohamed@gmail.com\",\n    // \"mobileNumber\": \"01000519979\" ,\n    \"password\": \"Hello@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"mohamed@gmail.com\",\n    // \"mobileNumber\": \"01000519979\" ,\n    \"password\": \"Hello@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/signin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-pQp8+dTbk1SsTeuuHvMU+aqAY6Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 09:27:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3M2IxYzU4MGY2M2UzODVkMTA4MWEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1NzIyNn0.5KA7XCdgiLfHjxp3Yqm9zYjKim5mstu88oms01NyqFY\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\n\n    \"firstName\": \"mohamed\",\n    \"lastName\" : \"ahmed\",\n    \"email\":\"mohamed20@gmail.com\",\n    \"password\":\"Hello@123\",\n    \"roleEmail\":\"hello@gmail.com\",\n    \"dateOfBirth\":\"2003/3/13\",\n    \"mobileNumber\":\"01004519967\"\n\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c741b4e3065fb56249e92c"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\n\n    \"firstName\": \"mohamed\",\n    \"lastName\" : \"ahmed\",\n    \"email\":\"mohamed30@gmail.com\",\n    \"password\":\"Hello@123\",\n    \"roleEmail\":\"hello@gmail.com\",\n    \"dateOfBirth\":\"2003/3/13\",\n    \"mobileNumber\":\"01004518967\"\n\n   }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c741b4e3065fb56249e92c"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 10:06:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3M2E2NGJkMWU1YTllZGZjOTEwNWQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTc2Mn0.E9e4Po34oxDhl5jtxRHIq65fIDxO2KeXAZ6j3AYdk1M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c73a64bd1e5a9edfc9105d"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3M2E2NGJkMWU1YTllZGZjOTEwNWQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTc2Mn0.E9e4Po34oxDhl5jtxRHIq65fIDxO2KeXAZ6j3AYdk1M",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/users/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c73a64bd1e5a9edfc9105d"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 10:09:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c741b4e3065fb56249e92c"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/users/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c741b4e3065fb56249e92c"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a7-uzml+JcMIOWIW1ZJpl+xE5pnALs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 10:12:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"user\": {\n        \"_id\": \"65c741b4e3065fb56249e92c\",\n        \"firstName\": \"mohamed\",\n        \"lastName\": \"ahmed\",\n        \"email\": \"mohamed30@gmail.com\",\n        \"password\": \"$2b$08$CKE8YlPoBTb.gYKSBBW1O.QBuhR0ip8LMCT8RxiDpxGrbIMlcuzpq\",\n        \"roleEmail\": \"hello@gmail.com\",\n        \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n        \"mobileNumber\": 1004518967,\n        \"role\": \"user\",\n        \"status\": \"online\",\n        \"createdAt\": \"2024-02-10T09:28:20.093Z\",\n        \"updatedAt\": \"2024-02-10T10:06:02.877Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "another user profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/users/profile/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"profile",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c73a85bd1e5a9edfc91061"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "another user profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/users/profile/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										"profile",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c73a85bd1e5a9edfc91061"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "284"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11c-C5p9sDv12YDC/ai/BaoLUkodJlY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 10:27:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"user\": {\n        \"_id\": \"65c73a85bd1e5a9edfc91061\",\n        \"firstName\": \"shahd\",\n        \"lastName\": \"mohamed\",\n        \"email\": \"shahd2@gmail.com\",\n        \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n        \"mobileNumber\": 1000519977,\n        \"createdAt\": \"2024-02-10T08:57:41.755Z\",\n        \"updatedAt\": \"2024-02-10T08:57:41.755Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NWFiNmI1YzdiNTgwODIwNzRmNmUiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU2MzcyM30.m7wapUy4W9DjcksdhZclGNSs64KY5Ln7CCAVFnHHqZo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"Hello@123\",\n    \"newPassword\":\"Hello@124\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c75ab6b5c7b58082074f6e"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update password",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NWFiNmI1YzdiNTgwODIwNzRmNmUiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU2MzcyM30.m7wapUy4W9DjcksdhZclGNSs64KY5Ln7CCAVFnHHqZo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"password\": \"Hello@123\",\n    \"newPassword\":\"Hello@124\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c75ab6b5c7b58082074f6e"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-WTOj3SEeTxr9Rnns4OhSnmY3XyE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 11:16:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NWFiNmI1YzdiNTgwODIwNzRmNmUiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU2Mzc3M30.-h2Lv8Y0bzRSljJ2fDXI3J_UemrB6PrDlHfsilUcb8o\"\n}"
+						}
+					]
+				},
+				{
+					"name": "forget password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleEmail\":\"hello@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/forgetPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"forgetPassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"roleEmail\":\"hello@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/forgetPassword",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										"forgetPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-E5Owi0dNsW1iWEilODgTkNcxc5Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 11:46:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"your otp is \",\n    \"num\": 88880\n}"
+						}
+					]
+				},
+				{
+					"name": "verify otp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NjYwZjFmMTJmYjExM2FkOTE2NGIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU2NjYxN30.Dj6Lt-RYWlutFW659ar9-yJwrQUN9KErnmqjNZHiWqs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OTP\": 96556,\n    \"password\": \"Hey@1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/verify",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"verify"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "verify otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NjYwZjFmMTJmYjExM2FkOTE2NGIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU2NjYxN30.Dj6Lt-RYWlutFW659ar9-yJwrQUN9KErnmqjNZHiWqs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"OTP\": 96556,\n    \"password\": \"Hey@1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/verify",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										"verify"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 12:07:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "recovery emails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleEmail\":\"hello@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/users/recoveryEmail",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"users",
+								"recoveryEmail"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "recovery emails",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"roleEmail\":\"hello@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/users/recoveryEmail",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"users",
+										"recoveryEmail"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2359"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"937-zw7iTUC/wjija8dR9jmE8Y/xuxQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 12:29:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"users\": [\n        {\n            \"otp\": null,\n            \"_id\": \"65c73a85bd1e5a9edfc91061\",\n            \"firstName\": \"shahd\",\n            \"lastName\": \"mohamed\",\n            \"email\": \"shahd2@gmail.com\",\n            \"password\": \"$2b$08$/HhhAucFOaHxKn5WcXNZZOpK.dUHLrHuLh5Y/9I8QONbcD4rL8wBO\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1000519977,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"createdAt\": \"2024-02-10T08:57:41.755Z\",\n            \"updatedAt\": \"2024-02-10T10:51:20.370Z\",\n            \"__v\": 0\n        },\n        {\n            \"otp\": null,\n            \"_id\": \"65c73accbd1e5a9edfc91064\",\n            \"firstName\": \"mohamed\",\n            \"lastName\": \"ahmed\",\n            \"email\": \"mohamed20@gmail.com\",\n            \"password\": \"Hello@1234\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1004519967,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"createdAt\": \"2024-02-10T08:58:52.711Z\",\n            \"updatedAt\": \"2024-02-10T11:05:41.026Z\",\n            \"__v\": 0\n        },\n        {\n            \"otp\": null,\n            \"_id\": \"65c73b1c580f63e385d1081a\",\n            \"firstName\": \"mohamed\",\n            \"lastName\": \"ahmed\",\n            \"email\": \"mohamed@gmail.com\",\n            \"password\": \"$2b$08$hHMEUgjJgwaKEFh/.S83ReCuIUWI7ZdKhUtX7at6siGD0IJ/jc51y\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1000519979,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"createdAt\": \"2024-02-10T09:00:12.802Z\",\n            \"updatedAt\": \"2024-02-10T09:27:06.743Z\",\n            \"__v\": 0\n        },\n        {\n            \"otp\": null,\n            \"_id\": \"65c741b4e3065fb56249e92c\",\n            \"firstName\": \"mohamed\",\n            \"lastName\": \"ahmed\",\n            \"email\": \"mohamed30@gmail.com\",\n            \"password\": \"$2b$08$CKE8YlPoBTb.gYKSBBW1O.QBuhR0ip8LMCT8RxiDpxGrbIMlcuzpq\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1004518967,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"createdAt\": \"2024-02-10T09:28:20.093Z\",\n            \"updatedAt\": \"2024-02-10T10:06:02.877Z\",\n            \"__v\": 0\n        },\n        {\n            \"otp\": null,\n            \"_id\": \"65c758eb53af95f19127257d\",\n            \"firstName\": \"mohamed\",\n            \"lastName\": \"ahmed\",\n            \"email\": \"mohamed8@gmail.com\",\n            \"password\": \"$2b$08$gTvh4PvpAVQQtVz4C/d5TeV7TjhQH3qOxKOqG6z/SSEBQj45uKbEy\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1000510977,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"createdAt\": \"2024-02-10T11:07:23.197Z\",\n            \"updatedAt\": \"2024-02-10T11:10:47.442Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65c7660f1f12fb113ad9164b\",\n            \"firstName\": \"mohamed\",\n            \"lastName\": \"ahmed\",\n            \"email\": \"mohamed10@gmail.com\",\n            \"password\": \"Hey@1234\",\n            \"roleEmail\": \"hello@gmail.com\",\n            \"dateOfBirth\": \"2003-03-12T22:00:00.000Z\",\n            \"mobileNumber\": 1400610977,\n            \"role\": \"user\",\n            \"status\": \"online\",\n            \"otp\": null,\n            \"createdAt\": \"2024-02-10T12:03:27.422Z\",\n            \"updatedAt\": \"2024-02-10T12:07:03.071Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "add company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyName\" : \"company\",\n    \"industry\": \"Medical\",\n    \"address\": \"maadi\",\n    \"description\": \"number one in this indusrty\",\n    \"companyEmail\":\"company@gmail.com\",\n    \"numberOfEmployees\": \"20\"\n    // \"companyHR\":\"123445\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"companyName\" : \"company\",\n    \"industry\": \"Medical\",\n    \"address\": \"maadi\",\n    \"description\": \"number one in this indusrty\",\n    \"companyEmail\":\"company@gmail.com\",\n    \"numberOfEmployees\": \"20\"\n    // \"companyHR\":\"123445\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/companies",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "356"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"164-4CMY3kJw3RPKZ9VpY/6jb2cXYNY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 17:25:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"company\": {\n        \"companyName\": \"company\",\n        \"description\": \"number one in this indusrty\",\n        \"industry\": \"Medical\",\n        \"address\": \"maadi\",\n        \"numberOfEmployees\": 20,\n        \"companyEmail\": \"company@gmail.com\",\n        \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n        \"_id\": \"65c7b17841648bb5e3f4614f\",\n        \"createdAt\": \"2024-02-10T17:25:12.397Z\",\n        \"updatedAt\": \"2024-02-10T17:25:12.397Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update company",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"companyName\" : \"company\",\n    \"industry\": \"Medical\",\n    \"address\": \"maadi\",\n    \"description\": \"number one in this indusrty\",\n    // \"companyEmail\":\"company@gmail.com\",\n    \"numberOfEmployees\": \"20\"\n\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/companies/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c7b17841648bb5e3f4614f"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update company",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    // \"companyName\" : \"company\",\n    \"industry\": \"Medical\",\n    \"address\": \"maadi\",\n    \"description\": \"number one in this indusrty\",\n    // \"companyEmail\":\"company@gmail.com\",\n    \"numberOfEmployees\": \"20\"\n\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/companies/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c7b17841648bb5e3f4614f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 17:55:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete cmpany",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/companies/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c7b17841648bb5e3f4614f"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete cmpany",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/companies/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c7b17841648bb5e3f4614f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 17:57:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "search company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/companies/search/:key",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies",
+								"search",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "Anythin"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/companies/search/:key",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies",
+										"search",
+										":key"
+									],
+									"variable": [
+										{
+											"key": "key",
+											"value": "Anythin"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "690"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b2-hOSRh8MTcpFKu5i2NSVJpV1he/0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 18:12:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"company\": [\n        {\n            \"_id\": \"65c7aed4b4cc3627a34ee8b3\",\n            \"companyName\": \"Anything\",\n            \"description\": \"number one in this indusrty\",\n            \"industry\": \"Medical\",\n            \"address\": \"maadi\",\n            \"numberOfEmployees\": 20,\n            \"companyEmail\": \"anything@gmail.com\",\n            \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T17:13:56.351Z\",\n            \"updatedAt\": \"2024-02-10T17:13:56.351Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65c7b01141648bb5e3f46147\",\n            \"companyName\": \"Anything2\",\n            \"description\": \"number one in this indusrty\",\n            \"industry\": \"Medical\",\n            \"address\": \"maadi\",\n            \"numberOfEmployees\": 20,\n            \"companyEmail\": \"anything45@gmail.com\",\n            \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T17:19:13.494Z\",\n            \"updatedAt\": \"2024-02-10T17:19:13.494Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/companies",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1522"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5f2-V8l6NMGPda2o/sgCgwpmsIG3pRo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 19:17:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"company\": [\n        {\n            \"_id\": \"65c7aed4b4cc3627a34ee8b3\",\n            \"companyName\": \"Anything\",\n            \"description\": \"number one in this indusrty\",\n            \"industry\": \"Medical\",\n            \"address\": \"maadi\",\n            \"numberOfEmployees\": 20,\n            \"companyEmail\": \"anything@gmail.com\",\n            \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T17:13:56.351Z\",\n            \"updatedAt\": \"2024-02-10T17:13:56.351Z\",\n            \"__v\": 0,\n            \"jobs\": [\n                {\n                    \"_id\": \"65c7c8db10e2ffcae3a2252e\",\n                    \"jobTitle\": \"job\",\n                    \"jobLocation\": \"location\",\n                    \"workingTime\": \"8 hours\",\n                    \"seniorityLevel\": \"Senior\",\n                    \"jobDescription\": \"wonderful job\",\n                    \"technicalSkills\": [\n                        \"node.js\",\n                        \"express\"\n                    ],\n                    \"softSkills\": [\n                        \"communication\",\n                        \"presentation\"\n                    ],\n                    \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n                    \"company\": \"65c7aed4b4cc3627a34ee8b3\",\n                    \"createdAt\": \"2024-02-10T19:04:59.086Z\",\n                    \"updatedAt\": \"2024-02-10T19:04:59.086Z\",\n                    \"__v\": 0\n                },\n                {\n                    \"_id\": \"65c7ca4f1669a747ba4a28ef\",\n                    \"jobTitle\": \"job2\",\n                    \"jobLocation\": \"location\",\n                    \"workingTime\": \"8 hours\",\n                    \"seniorityLevel\": \"Senior\",\n                    \"jobDescription\": \"wonderful job\",\n                    \"technicalSkills\": [\n                        \"node.js\",\n                        \"express\"\n                    ],\n                    \"softSkills\": [\n                        \"communication\",\n                        \"presentation\"\n                    ],\n                    \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n                    \"company\": \"65c7aed4b4cc3627a34ee8b3\",\n                    \"createdAt\": \"2024-02-10T19:11:11.124Z\",\n                    \"updatedAt\": \"2024-02-10T19:11:11.124Z\",\n                    \"__v\": 0\n                }\n            ]\n        },\n        {\n            \"_id\": \"65c7b01141648bb5e3f46147\",\n            \"companyName\": \"Anything2\",\n            \"description\": \"number one in this indusrty\",\n            \"industry\": \"Medical\",\n            \"address\": \"maadi\",\n            \"numberOfEmployees\": 20,\n            \"companyEmail\": \"anything45@gmail.com\",\n            \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T17:19:13.494Z\",\n            \"updatedAt\": \"2024-02-10T17:19:13.494Z\",\n            \"__v\": 0,\n            \"jobs\": []\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get application",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ZTRmYzQ3YzcxZTJlOWY1NDBmN2MiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU5OTExMX0.5QXzSiujEQcxgarDhD9Tc__YGcSu-OGBbOuskSdQ4po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/companies/application",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"companies",
+								"application"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get application",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ZTRmYzQ3YzcxZTJlOWY1NDBmN2MiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU5OTExMX0.5QXzSiujEQcxgarDhD9Tc__YGcSu-OGBbOuskSdQ4po",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/companies/application",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"companies",
+										"application"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-CfVX2ET6LNKGolodAKyF8OYpCoM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 21:07:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"application\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "job",
+			"item": [
+				{
+					"name": "add job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jobTitle\": \"job\",\n    \"jobLocation\":\"location\",\n    \"workingTime\":\"8 hours\",\n    \"jobDescription\":\"wonderful job\",\n    \"technicalSkills\": [\"node.js\" , \"express\"],\n    \"softSkills\":[\"communication\" , \"presentation\"],\n    \"seniorityLevel\" : \"Senior\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add job",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"jobTitle\": \"job\",\n    \"jobLocation\":\"location\",\n    \"workingTime\":\"8 hours\",\n    \"jobDescription\":\"wonderful job\",\n    \"technicalSkills\": [\"node.js\" , \"express\"],\n    \"softSkills\":[\"communication\" , \"presentation\"],\n    \"seniorityLevel\" : \"Senior\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "396"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18c-R7vXA0Ko0O5ec1oqL8KcNAtXfz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 18:43:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"job\": {\n        \"jobTitle\": \"job\",\n        \"jobLocation\": \"location\",\n        \"workingTime\": \"8 hours\",\n        \"seniorityLevel\": \"Senior\",\n        \"jobDescription\": \"wonderful job\",\n        \"technicalSkills\": [\n            \"node.js\",\n            \"express\"\n        ],\n        \"softSkills\": [\n            \"communication\",\n            \"presentation\"\n        ],\n        \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n        \"_id\": \"65c7c3e0faf042bf637e897f\",\n        \"createdAt\": \"2024-02-10T18:43:44.168Z\",\n        \"updatedAt\": \"2024-02-10T18:43:44.168Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jobTitle\": \"job\",\n    \"jobLocation\":\"location\",\n    \"workingTime\":\"8 hours\",\n    \"jobDescription\":\"wonderful job\",\n    \"technicalSkills\": [\"node.js\" , \"express\"],\n    \"softSkills\":[\"communication\" , \"presentation\"],\n    \"seniorityLevel\" : \"Senior\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c7c3e0faf042bf637e897f"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update job",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"jobTitle\": \"job\",\n    \"jobLocation\":\"location\",\n    \"workingTime\":\"8 hours\",\n    \"jobDescription\":\"wonderful job\",\n    \"technicalSkills\": [\"node.js\" , \"express\"],\n    \"softSkills\":[\"communication\" , \"presentation\"],\n    \"seniorityLevel\" : \"Senior\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c7c3e0faf042bf637e897f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 18:52:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete job",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c7c60402f125acf2a57bdb"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete job",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c7c60402f125acf2a57bdb"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-ga8EF/lp+ThIsc8w/OHbk4hPrME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 18:53:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all jobs with company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all jobs with company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"450-ouZ1dED4GuiIt94PzeSf/TroR0g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 19:05:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"job\": [\n        {\n            \"_id\": \"65c7c3e0faf042bf637e897f\",\n            \"jobTitle\": \"job\",\n            \"jobLocation\": \"location\",\n            \"workingTime\": \"8 hours\",\n            \"seniorityLevel\": \"Senior\",\n            \"jobDescription\": \"wonderful job\",\n            \"technicalSkills\": [\n                \"node.js\",\n                \"express\"\n            ],\n            \"softSkills\": [\n                \"communication\",\n                \"presentation\"\n            ],\n            \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T18:43:44.168Z\",\n            \"updatedAt\": \"2024-02-10T18:52:42.347Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65c7c8db10e2ffcae3a2252e\",\n            \"jobTitle\": \"job\",\n            \"jobLocation\": \"location\",\n            \"workingTime\": \"8 hours\",\n            \"seniorityLevel\": \"Senior\",\n            \"jobDescription\": \"wonderful job\",\n            \"technicalSkills\": [\n                \"node.js\",\n                \"express\"\n            ],\n            \"softSkills\": [\n                \"communication\",\n                \"presentation\"\n            ],\n            \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n            \"company\": {\n                \"_id\": \"65c7aed4b4cc3627a34ee8b3\",\n                \"companyName\": \"Anything\",\n                \"description\": \"number one in this indusrty\",\n                \"industry\": \"Medical\",\n                \"address\": \"maadi\",\n                \"numberOfEmployees\": 20,\n                \"companyEmail\": \"anything@gmail.com\",\n                \"companyHR\": \"65c783f1aa254e987d58ee0f\",\n                \"createdAt\": \"2024-02-10T17:13:56.351Z\",\n                \"updatedAt\": \"2024-02-10T17:13:56.351Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2024-02-10T19:04:59.086Z\",\n            \"updatedAt\": \"2024-02-10T19:04:59.086Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "jobs of one company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs/company?name=Anything",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs",
+								"company"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anything"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "jobs of one company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs/company?name=Anything",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs",
+										"company"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Anything"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "842"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34a-YYYul0mmdmHRjxAYqo9GEDn3lU4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 19:13:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"job\": [\n        {\n            \"_id\": \"65c7c8db10e2ffcae3a2252e\",\n            \"jobTitle\": \"job\",\n            \"jobLocation\": \"location\",\n            \"workingTime\": \"8 hours\",\n            \"seniorityLevel\": \"Senior\",\n            \"jobDescription\": \"wonderful job\",\n            \"technicalSkills\": [\n                \"node.js\",\n                \"express\"\n            ],\n            \"softSkills\": [\n                \"communication\",\n                \"presentation\"\n            ],\n            \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n            \"company\": \"65c7aed4b4cc3627a34ee8b3\",\n            \"createdAt\": \"2024-02-10T19:04:59.086Z\",\n            \"updatedAt\": \"2024-02-10T19:04:59.086Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65c7ca4f1669a747ba4a28ef\",\n            \"jobTitle\": \"job2\",\n            \"jobLocation\": \"location\",\n            \"workingTime\": \"8 hours\",\n            \"seniorityLevel\": \"Senior\",\n            \"jobDescription\": \"wonderful job\",\n            \"technicalSkills\": [\n                \"node.js\",\n                \"express\"\n            ],\n            \"softSkills\": [\n                \"communication\",\n                \"presentation\"\n            ],\n            \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n            \"company\": \"65c7aed4b4cc3627a34ee8b3\",\n            \"createdAt\": \"2024-02-10T19:11:11.124Z\",\n            \"updatedAt\": \"2024-02-10T19:11:11.124Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "job filter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs/filter?workingTime=part time&jobTitle=job",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "workingTime",
+									"value": "part time"
+								},
+								{
+									"key": "jobTitle",
+									"value": "job"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "job filter",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3ODNmMWFhMjU0ZTk4N2Q1OGVlMGYiLCJyb2xlIjoiY29tcGFueV9IUiIsImlhdCI6MTcwNzU4NTA3OH0.TTDxDaqOh5dENEeySxRmPoVhy7et4G5N08cGKwZZw2E",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs/filter?workingTime=part time&jobTitle=job",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "workingTime",
+											"value": "part time"
+										},
+										{
+											"key": "jobTitle",
+											"value": "job"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "401"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"191-MpuZb/6QdSqQo8t74aFRQL5ETGQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 20:09:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"jobs\": [\n        {\n            \"_id\": \"65c7c3e0faf042bf637e897f\",\n            \"jobTitle\": \"job\",\n            \"jobLocation\": \"location\",\n            \"workingTime\": \"part time\",\n            \"seniorityLevel\": \"Senior\",\n            \"jobDescription\": \"wonderful job\",\n            \"technicalSkills\": [\n                \"node.js\",\n                \"express\"\n            ],\n            \"softSkills\": [\n                \"communication\",\n                \"presentation\"\n            ],\n            \"addedBy\": \"65c783f1aa254e987d58ee0f\",\n            \"createdAt\": \"2024-02-10T18:43:44.168Z\",\n            \"updatedAt\": \"2024-02-10T20:07:46.977Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "apply",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userTechSkills[]",
+									"value": "node js",
+									"type": "text"
+								},
+								{
+									"key": "userSoftSkills[]",
+									"value": "problem solving",
+									"type": "text"
+								},
+								{
+									"key": "userResume",
+									"type": "file",
+									"src": "/Users/shahdmuhamed/Desktop/Screenshot 2024-02-07 at 1.18.43 AM.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/vi/jobs/apply/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vi",
+								"jobs",
+								"apply",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "65c7c3e0faf042bf637e897f"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "apply",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWM3NDFiNGUzMDY1ZmI1NjI0OWU5MmMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzU1OTUzNn0.XUfgy40A2KFQqRTHuJdHxuVsEVHwufbUBzt1E6AcGL4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "userTechSkills[]",
+											"value": "node js",
+											"type": "text"
+										},
+										{
+											"key": "userSoftSkills[]",
+											"value": "problem solving",
+											"type": "text"
+										},
+										{
+											"key": "userResume",
+											"type": "file",
+											"src": "/Users/shahdmuhamed/Desktop/Screenshot 2024-02-07 at 1.18.43 AM.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/api/vi/jobs/apply/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"vi",
+										"jobs",
+										"apply",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "65c7c3e0faf042bf637e897f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "289"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"121-kMaa+MxP6a0NWF1ZAJPUQorTPtM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Feb 2024 21:00:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"application\": {\n        \"job\": \"65c7c3e0faf042bf637e897f\",\n        \"user\": \"65c741b4e3065fb56249e92c\",\n        \"userTechSkills\": [\n            \"node js\"\n        ],\n        \"userSoftSkills\": [\n            \"problem solving\"\n        ],\n        \"_id\": \"65c7e3d9d25634b965e33dca\",\n        \"createdAt\": \"2024-02-10T21:00:09.512Z\",\n        \"updatedAt\": \"2024-02-10T21:00:09.512Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
